@@ -18,6 +18,10 @@ build:
 dev:
 	dotenvx run -- go run ./...
 
+.PHONY: dev-web
+dev-web:
+	dotenvx run -- go run ./... web api webui
+
 .PHONY: run
 run:
 	dotenvx run -- ./build/app
